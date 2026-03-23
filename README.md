@@ -46,14 +46,11 @@ stateDiagram-v2
     Terminated --> Active : revert (回帰)
     
     Active --> Baseline : baseline (凝縮)
-    Baseline --> Active : (Continue)
     
     state Baseline {
         direction TB
         History_Store --> Archive_Store : archive (移動)
     }
-
-    Terminated --> [*] : discard (廃棄)
 ```
     
 ## 3. シナリオによる系譜の追跡
